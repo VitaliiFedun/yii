@@ -1,0 +1,421 @@
+2018-01-14 18:28:33 [127.0.0.1][-][sg0kj3ng7ivk6nka8ieos4ni01][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: H:\1_PHP\OpenServer\domains\yii2-blog/vendor\bower/jquery/dist' in H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('H:\\1_PHP\\OpenSe...', Array)
+#1 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', 1)
+#6 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\views\layouts\bootstrap.php(4): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\View.php(332): require('H:\\1_PHP\\OpenSe...')
+#9 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('H:\\1_PHP\\OpenSe...', Array)
+#10 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('H:\\1_PHP\\OpenSe...', Array, Object(app\modules\main\controllers\DefaultController))
+#11 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="">\n...')
+#12 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\modules\main\controllers\DefaultController.php(14): yii\base\Controller->render('index')
+#13 [internal function]: app\modules\main\controllers\DefaultController->actionIndex()
+#14 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2018-01-14 18:28:33 [127.0.0.1][-][sg0kj3ng7ivk6nka8ieos4ni01][info][application] $_COOKIE = [
+    'PHPSESSID' => 'sg0kj3ng7ivk6nka8ieos4ni01'
+    '_csrf' => '1f17c8487f1a4e39a87c73a3bc9accfabba620c90ef6e833e87d0f93c62f0bc2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"27i1ufVRz8OcCBNHJHJ-8s7d6bBQPcar\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'qeheba'
+    '__captcha/site/captchacount' => 1
+    '__captcha/main/main/captcha' => 'iiluba'
+    '__captcha/main/main/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'myblog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=sg0kj3ng7ivk6nka8ieos4ni01; _csrf=1f17c8487f1a4e39a87c73a3bc9accfabba620c90ef6e833e87d0f93c62f0bc2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2227i1ufVRz8OcCBNHJHJ-8s7d6bBQPcar%22%3B%7D'
+    'PATH' => 'h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\ext;h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\pear;h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;h:\\1_php\\openserver\\modules\\php\\PHP-5.6;h:\\1_php\\openserver\\modules\\imagemagick;h:\\1_php\\openserver\\modules\\wget\\bin;h:\\1_php\\openserver\\modules\\git;h:\\1_php\\openserver\\modules\\git\\bin;h:\\1_php\\openserver\\modules\\git\\mingw\\bin;h:\\1_php\\openserver\\modules\\git\\cmd;h:\\1_php\\openserver\\modules\\database\\MySQL-5.5\\bin;h:\\1_php\\openserver\\modules\\http\\Apache-2.4\\bin;h:\\1_php\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Program Files\\PC Connectivity Solution\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\php\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'myblog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web/index.php'
+    'REMOTE_PORT' => '19745'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1515943713.332
+    'REQUEST_TIME' => 1515943713
+    'argv' => []
+    'argc' => 0
+]
+2018-01-14 18:28:46 [127.0.0.1][-][sg0kj3ng7ivk6nka8ieos4ni01][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: H:\1_PHP\OpenServer\domains\yii2-blog/vendor\bower/jquery/dist' in H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('H:\\1_PHP\\OpenSe...', Array)
+#1 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', 1)
+#6 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\views\layouts\bootstrap.php(4): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\View.php(332): require('H:\\1_PHP\\OpenSe...')
+#9 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('H:\\1_PHP\\OpenSe...', Array)
+#10 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('H:\\1_PHP\\OpenSe...', Array, Object(app\modules\main\controllers\DefaultController))
+#11 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="">\n...')
+#12 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\modules\main\controllers\DefaultController.php(14): yii\base\Controller->render('index')
+#13 [internal function]: app\modules\main\controllers\DefaultController->actionIndex()
+#14 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2018-01-14 18:28:46 [127.0.0.1][-][sg0kj3ng7ivk6nka8ieos4ni01][info][application] $_COOKIE = [
+    'PHPSESSID' => 'sg0kj3ng7ivk6nka8ieos4ni01'
+    '_csrf' => '1f17c8487f1a4e39a87c73a3bc9accfabba620c90ef6e833e87d0f93c62f0bc2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"27i1ufVRz8OcCBNHJHJ-8s7d6bBQPcar\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'qeheba'
+    '__captcha/site/captchacount' => 1
+    '__captcha/main/main/captcha' => 'iiluba'
+    '__captcha/main/main/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'myblog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=sg0kj3ng7ivk6nka8ieos4ni01; _csrf=1f17c8487f1a4e39a87c73a3bc9accfabba620c90ef6e833e87d0f93c62f0bc2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2227i1ufVRz8OcCBNHJHJ-8s7d6bBQPcar%22%3B%7D'
+    'PATH' => 'h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\ext;h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\pear;h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;h:\\1_php\\openserver\\modules\\php\\PHP-5.6;h:\\1_php\\openserver\\modules\\imagemagick;h:\\1_php\\openserver\\modules\\wget\\bin;h:\\1_php\\openserver\\modules\\git;h:\\1_php\\openserver\\modules\\git\\bin;h:\\1_php\\openserver\\modules\\git\\mingw\\bin;h:\\1_php\\openserver\\modules\\git\\cmd;h:\\1_php\\openserver\\modules\\database\\MySQL-5.5\\bin;h:\\1_php\\openserver\\modules\\http\\Apache-2.4\\bin;h:\\1_php\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Program Files\\PC Connectivity Solution\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\php\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'myblog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web/index.php'
+    'REMOTE_PORT' => '19752'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1515943726.191
+    'REQUEST_TIME' => 1515943726
+    'argv' => []
+    'argc' => 0
+]
+2018-01-14 18:33:23 [127.0.0.1][-][sg0kj3ng7ivk6nka8ieos4ni01][error][ReflectionException] exception 'ReflectionException' with message 'Class zyx\phpmailer\Mailer does not exist' in H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\Container.php:426
+Stack trace:
+#0 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\Container.php(426): ReflectionClass->__construct('zyx\\phpmailer\\M...')
+#1 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\Container.php(364): yii\di\Container->getDependencies('zyx\\phpmailer\\M...')
+#2 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('zyx\\phpmailer\\M...', Array, Array)
+#3 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('zyx\\phpmailer\\M...', Array, Array)
+#4 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#5 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Module.php(724): yii\di\ServiceLocator->get('mail', true)
+#6 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\ServiceLocator.php(74): yii\base\Module->get('mail')
+#7 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\components\Common.php(11): yii\di\ServiceLocator->__get('mail')
+#8 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\modules\main\controllers\MainController.php(57): frontend\components\Common->sendMail('First test', ' <div>Body: <b>...')
+#9 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#10 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('contact', Array)
+#13 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('main/main/conta...', Array)
+#14 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+2018-01-14 18:33:23 [127.0.0.1][-][sg0kj3ng7ivk6nka8ieos4ni01][info][application] $_POST = [
+    '_csrf' => '36kCgwrmrpdoKgPattJZWzuxnc2Ozd--Eu220BshFjLtnmuyf4D4xRISTLn1kBcTcfnX4La-6Nokj_SBS0J3QA=='
+    'ContactForm' => [
+        'name' => 'test'
+        'email' => 'test@test.com'
+        'subject' => 'First test'
+        'body' => 'test'
+        'verifyCode' => 'iiluba'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'sg0kj3ng7ivk6nka8ieos4ni01'
+    '_csrf' => '1f17c8487f1a4e39a87c73a3bc9accfabba620c90ef6e833e87d0f93c62f0bc2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"27i1ufVRz8OcCBNHJHJ-8s7d6bBQPcar\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'qeheba'
+    '__captcha/site/captchacount' => 1
+    '__captcha/main/main/captcha' => 'yuxzsol'
+    '__captcha/main/main/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'myblog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '262'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://myblog'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://myblog/main/main/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=sg0kj3ng7ivk6nka8ieos4ni01; _csrf=1f17c8487f1a4e39a87c73a3bc9accfabba620c90ef6e833e87d0f93c62f0bc2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2227i1ufVRz8OcCBNHJHJ-8s7d6bBQPcar%22%3B%7D'
+    'PATH' => 'h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\ext;h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\pear;h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;h:\\1_php\\openserver\\modules\\php\\PHP-5.6;h:\\1_php\\openserver\\modules\\imagemagick;h:\\1_php\\openserver\\modules\\wget\\bin;h:\\1_php\\openserver\\modules\\git;h:\\1_php\\openserver\\modules\\git\\bin;h:\\1_php\\openserver\\modules\\git\\mingw\\bin;h:\\1_php\\openserver\\modules\\git\\cmd;h:\\1_php\\openserver\\modules\\database\\MySQL-5.5\\bin;h:\\1_php\\openserver\\modules\\http\\Apache-2.4\\bin;h:\\1_php\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Program Files\\PC Connectivity Solution\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\php\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'myblog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web/index.php'
+    'REMOTE_PORT' => '19926'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1515944003.118
+    'REQUEST_TIME' => 1515944003
+    'argv' => []
+    'argc' => 0
+]
+2018-01-14 19:02:23 [127.0.0.1][-][sg0kj3ng7ivk6nka8ieos4ni01][error][ReflectionException] exception 'ReflectionException' with message 'Class zyx\phpmailer\Mailer does not exist' in H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\Container.php:426
+Stack trace:
+#0 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\Container.php(426): ReflectionClass->__construct('zyx\\phpmailer\\M...')
+#1 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\Container.php(364): yii\di\Container->getDependencies('zyx\\phpmailer\\M...')
+#2 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('zyx\\phpmailer\\M...', Array, Array)
+#3 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('zyx\\phpmailer\\M...', Array, Array)
+#4 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#5 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Module.php(724): yii\di\ServiceLocator->get('mail', true)
+#6 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\ServiceLocator.php(74): yii\base\Module->get('mail')
+#7 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\components\Common.php(11): yii\di\ServiceLocator->__get('mail')
+#8 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\modules\main\controllers\MainController.php(57): frontend\components\Common->sendMail('First test', ' <div>Body: <b>...')
+#9 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#10 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('contact', Array)
+#13 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('main/main/conta...', Array)
+#14 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+2018-01-14 19:02:23 [127.0.0.1][-][sg0kj3ng7ivk6nka8ieos4ni01][info][application] $_POST = [
+    '_csrf' => 'ntS_RRD-kVRGLGeN_Q87KcKQK1pae4_W_2gQNpwWeees49Z0ZZjHBjwUKO6-TXVhiNhhd2IIuLLJClJnzHUYlQ=='
+    'ContactForm' => [
+        'name' => 'test'
+        'email' => 'test@test.com'
+        'subject' => 'First test'
+        'body' => 'test'
+        'verifyCode' => 'bihuei'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'sg0kj3ng7ivk6nka8ieos4ni01'
+    '_csrf' => '1f17c8487f1a4e39a87c73a3bc9accfabba620c90ef6e833e87d0f93c62f0bc2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"27i1ufVRz8OcCBNHJHJ-8s7d6bBQPcar\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'qeheba'
+    '__captcha/site/captchacount' => 1
+    '__captcha/main/main/captcha' => 'niyqdu'
+    '__captcha/main/main/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'myblog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '262'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://myblog'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://myblog/main/main/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=sg0kj3ng7ivk6nka8ieos4ni01; _csrf=1f17c8487f1a4e39a87c73a3bc9accfabba620c90ef6e833e87d0f93c62f0bc2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2227i1ufVRz8OcCBNHJHJ-8s7d6bBQPcar%22%3B%7D'
+    'PATH' => 'h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\ext;h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\pear;h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;h:\\1_php\\openserver\\modules\\php\\PHP-5.6;h:\\1_php\\openserver\\modules\\imagemagick;h:\\1_php\\openserver\\modules\\wget\\bin;h:\\1_php\\openserver\\modules\\git;h:\\1_php\\openserver\\modules\\git\\bin;h:\\1_php\\openserver\\modules\\git\\mingw\\bin;h:\\1_php\\openserver\\modules\\git\\cmd;h:\\1_php\\openserver\\modules\\database\\MySQL-5.5\\bin;h:\\1_php\\openserver\\modules\\http\\Apache-2.4\\bin;h:\\1_php\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Program Files\\PC Connectivity Solution\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\php\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'myblog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web/index.php'
+    'REMOTE_PORT' => '21379'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1515945743.521
+    'REQUEST_TIME' => 1515945743
+    'argv' => []
+    'argc' => 0
+]
+2018-01-14 19:07:38 [127.0.0.1][-][sg0kj3ng7ivk6nka8ieos4ni01][error][ReflectionException] exception 'ReflectionException' with message 'Class zyx\phpmailer\Mailer does not exist' in H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\Container.php:426
+Stack trace:
+#0 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\Container.php(426): ReflectionClass->__construct('zyx\\phpmailer\\M...')
+#1 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\Container.php(364): yii\di\Container->getDependencies('zyx\\phpmailer\\M...')
+#2 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('zyx\\phpmailer\\M...', Array, Array)
+#3 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('zyx\\phpmailer\\M...', Array, Array)
+#4 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#5 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Module.php(724): yii\di\ServiceLocator->get('mail', true)
+#6 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\di\ServiceLocator.php(74): yii\base\Module->get('mail')
+#7 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\components\Common.php(11): yii\di\ServiceLocator->__get('mail')
+#8 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\modules\main\controllers\MainController.php(57): frontend\components\Common->sendMail('First test', ' <div>Body: <b>...')
+#9 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#10 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('contact', Array)
+#13 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('main/main/conta...', Array)
+#14 H:\1_PHP\OpenServer\domains\yii2-blog\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 H:\1_PHP\OpenServer\domains\yii2-blog\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+2018-01-14 19:07:37 [127.0.0.1][-][sg0kj3ng7ivk6nka8ieos4ni01][info][application] $_POST = [
+    '_csrf' => 'jppHG2cNDIhY3jwEHhQDFgCqfxtbtTlXhwvnfRx6JeC8rS4qEmta2iLmc2ddVk1eSuI1NmPGDjOxaaUsTBlEkg=='
+    'ContactForm' => [
+        'name' => 'test'
+        'email' => 'test@test.com'
+        'subject' => 'First test'
+        'body' => 'test'
+        'verifyCode' => 'zvtihed'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'sg0kj3ng7ivk6nka8ieos4ni01'
+    '_csrf' => '1f17c8487f1a4e39a87c73a3bc9accfabba620c90ef6e833e87d0f93c62f0bc2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"27i1ufVRz8OcCBNHJHJ-8s7d6bBQPcar\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'qeheba'
+    '__captcha/site/captchacount' => 1
+    '__captcha/main/main/captcha' => 'zidavsv'
+    '__captcha/main/main/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'myblog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '263'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://myblog'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://myblog/main/main/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=sg0kj3ng7ivk6nka8ieos4ni01; _csrf=1f17c8487f1a4e39a87c73a3bc9accfabba620c90ef6e833e87d0f93c62f0bc2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2227i1ufVRz8OcCBNHJHJ-8s7d6bBQPcar%22%3B%7D'
+    'PATH' => 'h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\ext;h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\pear;h:\\1_php\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;h:\\1_php\\openserver\\modules\\php\\PHP-5.6;h:\\1_php\\openserver\\modules\\imagemagick;h:\\1_php\\openserver\\modules\\wget\\bin;h:\\1_php\\openserver\\modules\\git;h:\\1_php\\openserver\\modules\\git\\bin;h:\\1_php\\openserver\\modules\\git\\mingw\\bin;h:\\1_php\\openserver\\modules\\git\\cmd;h:\\1_php\\openserver\\modules\\database\\MySQL-5.5\\bin;h:\\1_php\\openserver\\modules\\http\\Apache-2.4\\bin;h:\\1_php\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Program Files\\PC Connectivity Solution\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\php\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'myblog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/1_PHP/OpenServer/domains/yii2-blog/frontend/web/index.php'
+    'REMOTE_PORT' => '21653'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1515946057.919
+    'REQUEST_TIME' => 1515946057
+    'argv' => []
+    'argc' => 0
+]
